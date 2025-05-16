@@ -6,7 +6,7 @@ from multiprocessing import Pool
 
 ## NOTE ##
 # We use the multiprocessing library so that this code can be run in parallel. 
-# All of the computation is done in serial, parallization only allows is to 
+# All of the computation is done in serial, parallization only allows us to 
 # compute many different times at once
 
 Nproc = 4
@@ -48,9 +48,9 @@ def compute(line):
     imin = line[3]
     isec = 0
 
-    # External field
+    # Mag field
     [bx, by, bz] = TS.compute.run_ts05(parmod,ps,x,y,z)
-    # Internal field via igrf
+    # IGRF
     [in_bx, in_by, in_bz] = TS.compute.run_igrf_dipole(iyear,iday,ihour,imin,isec,vgsex,vgsey,vgsez,x,y,z)
 
     bx += in_bx
