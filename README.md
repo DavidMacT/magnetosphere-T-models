@@ -1,6 +1,6 @@
 ## Summary
 
-A Python wrapper for the TS05 and TA16 magnetosphere models. This code allows users to run the original F77 codes under Python and in parallel. The main files to compile the codes are in the */src* directory. These files include the magnetosphere codes, the *geopack* code for the Earth's magnetic field (the IGRF) and a F90 script to calculate quantities related to the reconnection rate (as described in https://link.springer.com/article/10.1007/s11207-025-02462-8)
+A Python wrapper for the TS05 and TA16 magnetosphere models. This code allows users to run the original F77 codes under Python and in parallel. The main files to compile the codes are in the */src* directory. These files include the magnetosphere codes, the *geopack* code for the Earth's magnetic field (the IGRF) and a F90 script to calculate quantities related to the reconnection rate (as described [here](https://link.springer.com/article/10.1007/s11207-025-02462-8))
 
 Instructions for compiling the code are given below. In order to run the code, please see the instructions in the */examples* directory.
 
