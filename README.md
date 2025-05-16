@@ -1,12 +1,12 @@
 ## Summary
 
-This collection of files is a python wrapper of the TS05 solar field model and dipole codes by N. A. Tsyganenko. See his [website](https://geo.phys.spbu.ru/~tsyganenko/empirical-models/) for the original fortran codes and documentation.  This directory contains:
+A Python wrapper for the TS05 and TA16 magnetosphere models. This code allows users to run the original F77 codes under Python and in parallel. :
 
  - *README.md* 
     - This file
  - *src/*
      - *TsyganenkoWrapper.f90*
-        - A fortran wrapper written in F90 that serves as an interface between Tsyganenko's original F77 codes and python. This file has been written to accept an array of spacial values for which to calculate the magnetic field from. This allows us to avoid looping in python (slow!) without modifying Tsyganenko's code an any way.
+        - A fortran wrapper written in F90 that serves as an interface between Tsyganenko's original F77 codes and python. This file has been written to accept an array of spatial values for which to calculate the magnetic field from. This allows us to avoid looping in python (slow!) without modifying Tsyganenko's code an any way.
      - *TsyganenkoWrapper.pyf*
         - This file serves as an interpreter between python and fortran, providing information about the KIND and INTENT of each variable in the *Tsyganenko_wrapper*.  
      - *TS04c.for*
