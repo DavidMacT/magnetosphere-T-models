@@ -52,9 +52,9 @@ def compute(line):
     imin = line[3]
     isec = 0
 
-    # External field
+    # Magnetospheric field
     [bx, by, bz] = TS.compute.run_ta16(parmod,ps,x,y,z)
-    # Internal field via igrf
+    # IGRF
     [in_bx, in_by, in_bz] = TS.compute.run_igrf_dipole(iyear,iday,ihour,imin,isec,vgsex,vgsey,vgsez,x,y,z)
 
     bx += in_bx
