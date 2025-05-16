@@ -27,6 +27,7 @@ When setting up a calculation, there are two main requirements.
 
 (2) A script to specify the grid and and variables you wish to calculate. Please read through *storm.py* to see how this is set up. This is the script to run.
 
+Remember that you need to soft link to the wrapper in this directory. The output files are .nc.
 
 ## Requirements
 
