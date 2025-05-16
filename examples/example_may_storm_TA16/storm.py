@@ -6,8 +6,8 @@ from multiprocessing import Pool
 
 ## NOTE ##
 # We use the multiprocessing library so that this code can be run in parallel. 
-# All of the computation is done in serial, parallization only allows is to 
-# compute many different times at once
+# All of the computation is done in serial, parallization only allows us to 
+# compute many different times at once.
 
 Nproc = 2
 
