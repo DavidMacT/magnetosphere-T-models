@@ -40,7 +40,7 @@ def compute(line):
     parmod = [0 for i in range(10)]
     parmod[0] = line[-4] # Pdyn
     parmod[1] = line[-1] # <SymHc>
-    parmod[2] = line[-2] # N-index
+    parmod[2] = line[-3] # N-index
     parmod[3] = line[5] # <By IMF>
     ps = line[15]
     vgsex = line[7]
